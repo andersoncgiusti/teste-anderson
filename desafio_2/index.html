@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Jokempô</title>
+	<link href="estilo/style.css" rel="stylesheet" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet" />
+	<link href="estilo/style.css" rel="stylesheet" />
+	<script src="js/scripts.js"></script>
+	<link rel="icon" type="image/x-icon" href="icon.png" />
+</head>
+<body>
+	<div id="principal">
+		<h1 id="titulo">Pedra, Papel e Tesoura</h1>	
+		<div id="placar">
+			<div id="jogador">
+				<h2 id="jogador-nome">Anderson</h2>
+				<span id="jogador-pontos">0</span> 
+				<ul id="jogador-escolha">
+					<li><a id="jogador-escolha-1" onclick="jogar(1)"><img src="image/pedra.png"></a></li>
+					<li><a id="jogador-escolha-2" onclick="jogar(2)"><img src="image/papel.png"></a></li>
+					<li><a id="jogador-escolha-3" onclick="jogar(3)"><img src="image/tesoura.png"></a></li>
+				</ul><!--jogador-escolha-->
+			</div><!--jogador-->
+		</div><!--placar-->
+		<div id="versus">vs</div><!--versus-->
+		<div id="placar">
+			<div id="computador">
+				<h2 id="computador-nome">Computador</h2>
+				<span id="computador-pontos">0</span> 
+				<ul id="computador-escolha">
+					<li><a id="computador-escolha-1"><img src="image/pedra.png"></a></li>
+					<li><a id="computador-escolha-2"><img src="image/papel.png"></a></li>
+					<li><a id="computador-escolha-3"><img src="image/tesoura.png"></a></li>
+				</ul><!--computador-escolha-->
+			</div><!--computador-->
+		</div><!--placar-->			
+	</div><!--principal-->
+	<div id="mensagem">&nbsp;</div><!--mensagem-->	
+</body>
+</html>
