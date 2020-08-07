@@ -1,3 +1,5 @@
+import sys
+
 print('=' * 30)
 print('{:^30}'.format('BANCO INTELITRADER'))
 print('=' * 30)
@@ -7,6 +9,9 @@ valor = int(input('Qual valor gostaria de sacar? R$'))
 print('=' * 30)
 
 total = valor
+if total <= 0 or total % 10 != 0:
+  print('Não é possível sacar este valor.')
+  sys.exit()
 cedula = 100
 totalCedula = 0
 while True:
